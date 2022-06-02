@@ -4,4 +4,4 @@ if __name__ == "__main__":
     import hidden_4
     for word in dir(hidden_4):
         if word[:2] != '__':
-            print("{w}".format(w = word))
+            print("{w}".format(w=word))
