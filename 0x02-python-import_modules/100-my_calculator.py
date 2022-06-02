@@ -21,5 +21,5 @@ if __name__ == "__main__":
     elif operator == '-':
         c = a - b
     elif operator == '/':
-        c = a / float(b)
+        c = a / b
     print("{:d} {:s} {:d} = {}".format(a, operator, b, c))
