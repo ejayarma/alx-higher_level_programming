@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-def replace_in_list(my_list, idx, element):
+def element_at(my_list, idx):
     new_element = None
     if 0 <= idx < len(my_list):
         new_element = my_list[idx]
