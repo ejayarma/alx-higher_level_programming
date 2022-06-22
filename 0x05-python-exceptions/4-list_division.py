@@ -3,8 +3,8 @@
 def list_division(my_list_1, my_list_2, list_length):
     new_list = []
     result = 0
-    try:
-        for i in range(list_length):
+    for i in range(list_length):
+        try:
             a = my_list_1[i]
             b = my_list_2[i]
             nifa = isinstance(a, (int, float))
@@ -18,7 +18,10 @@ def list_division(my_list_1, my_list_2, list_length):
                 new_list.append(result)
                 continue
             new_list.append(a / b)
-    except IndexError:
-        print('out of range')
-    finally:
-        return new_list
+        except IndexError:
+            print('out of range')
+            new_list.append(result)
+            continue
+        finally:
+            pass
+    return new_list
